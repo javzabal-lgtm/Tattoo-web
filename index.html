@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franciscorivastattoo | Arte y Tinta</title>
+    <style>
+        :root { --dorado: #c1a35f; --oscuro: #0a0a0a; --gris-panel: #1a1a1a; --blanco: #f4f4f4; }
+        body { font-family: sans-serif; margin: 0; background-color: var(--oscuro); color: var(--blanco); line-height: 1.6; scroll-behavior: smooth; }
+        header { background-color: #000; padding: 1.5rem; text-align: center; border-bottom: 2px solid var(--dorado); position: sticky; top: 0; z-index: 1000; }
+        h1 { margin: 0; letter-spacing: 5px; text-transform: uppercase; font-size: 1.5rem; color: var(--dorado); }
+        nav { margin-top: 10px; }
+        nav a { color: var(--blanco); text-decoration: none; margin: 0 10px; font-weight: bold; font-size: 0.8rem; }
+        .hero { height: 50vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&q=80&w=1200'); background-size: cover; background-position: center; }
+        .about { padding: 3rem 10%; max-width: 1200px; margin: auto; }
+        .about h2 { color: var(--dorado); }
+        .contact-container { background-color: var(--gris-panel); padding: 3rem 10%; text-align: center; }
+        form { max-width: 500px; margin: 2rem auto; text-align: left; background: #222; padding: 1.5rem; border-radius: 10px; }
+        label { display: block; margin-bottom: 5px; color: var(--dorado); font-size: 0.9rem; }
+        input, textarea { width: 100%; padding: 10px; margin-bottom: 1rem; background: #333; border: 1px solid #444; color: white; border-radius: 5px; }
+        .btn-submit { background-color: var(--dorado); color: #000; padding: 1rem; border: none; font-weight: bold; width: 100%; cursor: pointer; text-transform: uppercase; }
+        footer { text-align: center; padding: 2rem; background: #000; color: #555; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FRANCISCORIVASTATTOO</h1>
+        <nav>
+            <a href="#inicio">INICIO</a>
+            <a href="#sobre-mi">ARTISTA</a>
+            <a href="#contacto">CITAS</a>
+        </nav>
+    </header>
+    <section id="inicio" class="hero">
+        <h2>ARTE ETERNO</h2>
+        <p>Tu historia, mi lienzo.</p>
+    </section>
+    <section id="sobre-mi" class="about">
+        <h2>Francisco Rivas</h2>
+        <p>Especialista en arte personalizado. Cada tatuaje es una pieza única diseñada para perdurar.</p>
+    </section>
+    <section id="contacto" class="contact-container">
+        <h2>Reserva tu cita</h2>
+        <form action="https://formsubmit.co/TU_CORREO_AQUÍ" method="POST">
+            <label>Nombre</label>
+            <input type="text" name="name" required>
+            <label>Idea y Zona del Cuerpo</label>
+            <textarea name="message" rows="4" required></textarea>
+            <button type="submit" class="btn-submit">Enviar Solicitud</button>
+        </form>
+    </section>
+    <footer>
+        <p>FRANCISCORIVASTATTOO &copy; 2026</p>
+    </footer>
+</body>
+</html>
