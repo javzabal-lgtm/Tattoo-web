@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franciscorivastattoo | Arte y Tinta</title>
+    <style>
+        :root { 
+            --dorado: #c1a35f; 
+            --oscuro: #0a0a0a; 
+            --gris-panel: #1a1a1a; 
+            --blanco: #f4f4f4; 
+        }
+
+        * { box-sizing: border-box; }
+
+        body { 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+            margin: 0; 
+            background-color: var(--oscuro); 
+            color: var(--blanco); 
+            line-height: 1.6; 
+            scroll-behavior: smooth; 
+        }
+
+        header { 
+            background-color: #000; 
+            padding: 1.5rem; 
+            text-align: center; 
+            border-bottom: 2px solid var(--dorado); 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+        }
+
+        h1 { margin: 0; letter-spacing: 5px; text-transform: uppercase; font-size: 1.5rem; color: var(--dorado); }
+        
+        nav { margin-top: 10px; }
+        nav a { color: var(--blanco); text-decoration: none; margin: 0 10px; font-weight: bold; font-size: 0.8rem; text-transform: uppercase; }
+        nav a:hover { color: var(--dorado); }
+
+        .hero { 
+            height: 60vh; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            text-align: center; 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&q=80&w=1200'); 
+            background-size: cover; 
+            background-position: center; 
+        }
+
+        .hero h2 { font-size: 2.5rem; margin-bottom: 0.5rem; letter-spacing: 3px; }
+
+        .about { padding: 4rem 10%; max-width: 1200px; margin: auto; text-align: center; }
+        .about h2 { color: var(--dorado); font-size: 2rem; }
+        .about p { color: #ccc; font-size: 1.1rem; max-width: 800px; margin: auto; }
+
+        .contact-container { background-color: var(--gris-panel); padding: 4rem 10%; text-align: center; }
+        .contact-container h2 { color: var(--dorado); margin-bottom: 2rem; }
+
+        form { 
+            max-width: 500px; 
+            margin: 0 auto; 
+            text-align: left; 
+            background: #222; 
+            padding: 2rem; 
+            border-radius: 10px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        label { display: block; margin-bottom: 5px; color: var(--dorado); font-weight: bold; }
+        
+        input, textarea { 
+            width: 100%; 
+            padding: 12px; 
+            margin-bottom: 1.5rem; 
+            background: #333; 
+            border: 1px solid #444; 
+            color: white; 
+            border-radius: 5px; 
+        }
+
+        .btn-submit { 
+            background-color: var(--dorado); 
+            color: #000; 
+            padding: 1rem; 
+            border: none; 
+            font-weight: bold; 
+            width: 100%; 
+            cursor: pointer; 
+            text-transform: uppercase; 
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover { background-color: #fff; }
+
+        .social-section { padding: 3rem 1rem; text-align: center; background: #000; }
+        .social-section h3 { color: var(--dorado); margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 2px; }
+        .social-icons a { text-decoration: none; margin: 0 15px; display: inline-block; transition: 0.3s; }
+        .social-icons a:hover { transform: scale(1.2); }
+        .social-icons img { width: 45px; }
+
+        footer { text-align: center; padding: 2rem; background: #0a0a0a; color: #555; font-size: 0.8rem; border-top: 1px solid #222; }
+
+        /* Botón flotante de WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FRANCISCORIVASTATTOO</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Artista</a>
+            <a href="#contacto">Citas</a>
+            <a href="#redes">Redes</a>
+        </nav>
+    </header>
+
+    <a href="https://wa.me/584122050059" class="whatsapp-float" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="35" style="filter: brightness(0) invert(1);" alt="WhatsApp">
+    </a>
+
+    <section id="inicio" class="hero">
+        <h2>ARTE ETERNO</h2>
+        <p>Tu historia, mi lienzo. Diseños personalizados.</p>
+    </section>
+
+    <section id="sobre-mi" class="about">
+        <h2>Francisco Rivas</h2>
+        <p>Especialista en arte sobre la piel. Cada tatuaje es un compromiso con la calidad y la expresión personal.</p>
+    </section>
+
+    <section id="contacto" class="contact-container">
+        <h2>Solicita tu Cita</h2>
+        <form action="https://formsubmit.co/javzabal@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="https://javzabal-lgtm.github.io/Tattoo-web/">
+            <input type="hidden" name="_captcha" value="false">
+
+            <label>Nombre Completo</label>
+            <input type="text" name="nombre" placeholder="Tu nombre..." required>
+
+            <label>Idea del Tatuaje</label>
+            <textarea name="mensaje" rows="4" placeholder="Describe tu diseño, zona y tamaño..." required></textarea>
+
+            <button type="submit" class="btn-submit">Enviar Solicitud</button>
+        </form>
+    </section>
+
+    <section id="redes" class="social-section">
+        <h3>Conecta conmigo</h3>
+        <div class="social-icons">
+            <a href="https://wa.me/584122050059" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+            </a>
+            <a href="https://www.instagram.com/franciscorivastattoo" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@franciscorivastattoo" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100069198452442" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>FRANCISCORIVASTATTOO &copy; 2026 | javzabal@gmail.com</p>
+    </footer>
+
+</body>
+</html>
